@@ -746,10 +746,14 @@ body{
   margin: 60px 0px;
 }
 
+#slide-menu{
+  display: none;
+}
+
 /*responsive design section*/
 
 
-@media all and (max-width: 450px) {
+@media (max-width: 450px) {
   
 .nav-container{
   padding:  4px 4px;

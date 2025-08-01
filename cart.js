@@ -52,9 +52,6 @@ cartBox.querySelector('.quantity').addEventListener('click', (event) => {
   numberElement.textContent = Quantity;
 })
 
-
-
-
 }
 
 

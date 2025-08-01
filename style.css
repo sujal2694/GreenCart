@@ -746,33 +746,6 @@ body{
   margin: 60px 0px;
 }
 
-/*notification*/
-
-.addtocart{
-  position: absolute;
-  top: -150px;
-  left: 25%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-  border-radius: 20px;
-  padding: 10px;
-  transition: .3s;
-}
-
-.addtocart span{
-  display: flex;
-  align-items: center;
-}
-
-.addtocart span i{
-  margin: 5px 10px;
-  background: #16C550;
-  padding: 10px;
-  border-radius: 50%;
-  color: #fff;
-}
-
-
 /*responsive design section*/
 
 
@@ -818,10 +791,6 @@ body{
   height: 580vh;
   width: 50%;
   transition: all 0.5s;
-}
-
-.active{
-  left: 0;
 }
 
 .slide{
@@ -925,51 +894,245 @@ body{
   left: 8%;
 }
 
-.img-container .text span{
-  font-size: 35px;
-  color: #002A62;
-  font-weight: 800;
-  line-height: 45px;
-}
-
-.img-container .text button{
-  background-color: #229F5C;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 20px;
-  margin: 5px 10px;
-}
-
 .text p{
   display: inline-block;
-  font-size: 15px;
+  font-size: 12px;
   color: #002A62;
 }
 
 .text p i{
+  font-size: 10px;
+}
+
+/*categories section*/
+
+#categories{
+  margin-top: 20px;
+  padding: 7px 20px;
+  width: 150%;
+}
+
+#categories h1{
+  font-size: 32px;
+  padding: 10px 0px;
+  margin: 5px 10px;
+}
+
+.categories-box{
+  width: 30%;
+  padding: 10px 10px;
+  margin: 8px 5px;
+}
+
+/*products section*/
+
+#sellers{
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+#sellers h1{
+  font-size: 30px;
+  margin: 0px 8px;
+}
+
+.products-opt{
+  width: 150%;
+}
+
+.products-opt .product-box{
+  width: 45%;
+}
+
+/*About us banner*/
+
+.ab-container{
+  height: 300px;
+  width: 150%;
+  margin: 80px 0px;
+  padding: 0px 20px 0px 20px;
+  position: relative;
+}
+
+.ab-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 10px;
+}
+
+.ab-container .text{
+  top: 8%;
+  right: 4%;
+}
+
+.ab-container .text h1{
+  font-size: 18px;
+}
+
+.ab-container .text ul li{
   font-size: 15px;
+  margin: 5px 0px;
+}
+
+.ab-container .text ul li span{
+  font-size: 9px;
+}
+
+/*subscribe section*/
+
+.sub-btn{
+  width: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sub-btn h1{
+  font-size: 30px;
+}
+
+.sub-btn span{
+  font-size: 15px;
+  color: #5A5A5A;
+}
+
+.sub-btn .email-box{
+  width: 150%;
+  margin: 50px 0px;
+}
+
+/*detials section*/
+
+.detail-container{
+  width: 150%;
+}
+
+.detail-1{
+  margin: 70px 20px;
+}
+
+.detail-1 h1{
+  font-size: 25px;
+}
+
+.detail-1 h1 span{
+  font-size: 35px;
+}
+
+.detail-1 p{
+  font-size: 8px;
+}
+
+.detail{
+  margin: 70px 10px;
+}
+
+.detail h1{
+  font-size: 13px;
+  margin: 5px 5px;
+}
+
+.detail .list ul li{
+  line-height: 20px;
+  font-size: 10px;
+}
+
+/*footer section*/
+
+.foot{
+  width: 150%;
+}
+
+.foot-container{
+  font-size: 14px;
+  padding: 10px 10px;
+}
+
+/*Login page start here*/
+
+#login-page{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+/*cart section*/
+
+#cart-page{
+  position: fixed;
+  top: 30px;
+}
+
+.backbtn{
+  margin: 30px 10px;
+  font-size: 30px;
 }
 
 
+.cart-container{
+  padding: 5px 40px;
+}
+
+.cart-container .head{
+  font-size: 39px;
+  padding: 30px 20px;
+}
+
+.product{
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+.product .product-details h1{
+  font-size: 20px;
+}
+
+/*vegetables section start here*/
 
 
+#vegetables{
+  width: 150%;
+  margin-top: 70px;
+}
 
+#vegetables .head{
+  font-size: 30px;
+  margin: 40px 0px;
+}
 
+.veggies-list .product-box{
+  width: 48%;
+  padding: 10px 8px;
+  margin: 5px 0px;
+}
 
+.veggies-list .product-box img{
+  width: 100%;
+  margin: 5px 0px;
+}
 
+#fruits{
+  width: 150%;
+  margin-top: 70px;
+}
 
+#fruits .head{
+  font-size: 30px;
+  margin: 40px 0px;
+}
 
+#cold_drinks{
+  width: 150%;
+  margin-top: 70px;
+}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+#cold_drinks .head{
+  font-size: 30px;
+  margin: 40px 0px;
+}
+
 }
 

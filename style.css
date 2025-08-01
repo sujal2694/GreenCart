@@ -776,7 +776,7 @@ body{
 /*responsive design section*/
 
 
-@media screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
   
 .nav-container{
   padding:  4px 4px;

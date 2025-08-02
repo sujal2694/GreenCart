@@ -1067,7 +1067,9 @@ body{
 /*cart section*/
 
 #cart-page{
-  position: fixed;
+  position: absolute;
+  width: 150%;
+  height: 580vh;
   top: 30px;
 }
 

@@ -10,11 +10,19 @@ Addtocartbtns.forEach(button => {
 
 
 let AddTocart = (ProductBox) => {
+  
   const ProductImage = ProductBox.querySelector('img').src;
   const ProductName = ProductBox.querySelector('h2').textContent;
   const ProductPrice = ProductBox.querySelector('h3').innerHTML;
   
   let cartContent = document.querySelector('.cart-content');
+  let Cartitem = cartContent.querySelectorAll('#name');
+  for (let item of Cartitem) {
+    if (item.textContent === ProductName) {
+      alert('This item is already in cart');
+      return;
+    }
+  }
   let cartBox = document.createElement('div');
   cartBox.classList.add('product');
   cartBox.innerHTML = `
@@ -70,12 +78,24 @@ let updatePrice = () => {
     let price = priceElement.textContent.replace('$', '');
     let quantity = quantityElement.textContent;
     total += price * quantity;
-    console.log(price)
-    console.log(quantity)
   })
   totalprice.textContent = `$${total}`;
 }
 
+
+let Buybtn = document.querySelector('.Buybtn');
+Buybtn.addEventListener('click', (e) => {
+  let CartContent = document.querySelector('.cart-content'); 
+  let CartBoxes = CartContent.querySelectorAll('.product');
+  if (CartBoxes.length === 0) {
+    alert('Your cart is empty. Please add something in your cart');
+    return;
+  }
+  
+  CartBoxes.forEach(cartBox=>cartBox.remove());
+  updatePrice();
+  alert('Thanks for purchase!')
+})
 
 
 

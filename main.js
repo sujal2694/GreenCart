@@ -19,11 +19,11 @@ const CartIcon = document.querySelector('.cart');
 const BackBtn = document.querySelector('.backbtn');
 
 CartIcon.addEventListener('click', (event) => {
-  Cart.classList.remove('cartOpen');
+  Cart.style.left = '0';
 })
 
 BackBtn.addEventListener('click', (event) => {
-  Cart.classList.add('cartOpen');
+  Cart.style.left = '-750px';
 })
 
 //for open & close slide menu

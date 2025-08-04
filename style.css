@@ -583,17 +583,13 @@ body{
 /*cart section*/
 
 #cart-page{
-  position: absolute;
+  position: fixed;
   top: 80px;
-  right: -50%;
+  left: -750px;
   background-color: #fff;
   height: 190%;
-  width: 100%;
-  z-index: 10;
-}
-
-.cartOpen{
-  visibility: hidden;
+  width: 700px;
+  transition: all 0.5s;
 }
 
 .backbtn{
@@ -626,7 +622,7 @@ body{
   border-radius: 10px;
   padding: 5px 5px;
   background: #ACACAC70;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .product #price span{
@@ -752,7 +748,6 @@ body{
 }
 
 /*responsive design section*/
-
 
 @media (max-width: 454px) {
   
@@ -1068,10 +1063,9 @@ body{
 /*cart section*/
 
 #cart-page{
-  position: absolute;
-  width: 100%;
+  width: 80%;
   height: 470vh;
-  top: 0;
+  top: 30px;
 }
 
 .backbtn{
@@ -1184,4 +1178,5 @@ body{
 }
 
 }
+
 

@@ -26,22 +26,6 @@ BackBtn.addEventListener('click', (event) => {
   Cart.classList.add('cartOpen');
 })
 
-//Notifications which notify you that add items in cart
-
-let Notification = document.querySelector('.addtocart');
-let Btn = document.querySelectorAll('.BTN');
-
-let notify = async () => {
-  Notification.style.top = '-150px';
-}
-
-Btn.forEach(button => {
-  button.addEventListener('click', () => {
-    Notification.style.top = '6%';
-    setTimeout(notify, 3000);
-  })
-})
-
 //for open & close slide menu
 
 let Slide = document.querySelector('#slide-menu');

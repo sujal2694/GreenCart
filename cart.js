@@ -4,6 +4,7 @@ Addtocartbtns.forEach(button => {
   button.addEventListener('click', event => {
     let ProductBox = event.target.closest('.product-box'); 
     AddTocart(ProductBox);
+    updatePrice();
   })
 })
 
@@ -34,6 +35,7 @@ let AddTocart = (ProductBox) => {
   
 cartBox.querySelector('.removebtn').addEventListener('click', () => {
     cartBox.remove();
+    updatePrice();
 })
 
 cartBox.querySelector('.quantity').addEventListener('click', (event) => {
@@ -50,11 +52,29 @@ cartBox.querySelector('.quantity').addEventListener('click', (event) => {
     Quantity++;
   }
   numberElement.textContent = Quantity;
+  updatePrice();
 })
+
+
 
 }
 
-
+let updatePrice = () => {
+  let CartContent = document.querySelector('.cart-content'); 
+  let totalprice = document.querySelector('#total-price');
+  let Boxes = CartContent.querySelectorAll('.product');
+  let total = 0;
+  Boxes.forEach(Box => {
+    let priceElement  = Box.querySelector('#price');
+    let quantityElement = Box.querySelector('#number');
+    let price = priceElement.textContent.replace('$', '');
+    let quantity = quantityElement.textContent;
+    total += price * quantity;
+    console.log(price)
+    console.log(quantity)
+  })
+  totalprice.textContent = `$${total}`;
+}
 
 
 

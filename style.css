@@ -585,10 +585,11 @@ body{
 #cart-page{
   position: absolute;
   top: 80px;
-  left: 0;
+  right: -50%;
   background-color: #fff;
   height: 190%;
   width: 100%;
+  z-index: 10;
 }
 
 .cartOpen{
@@ -596,7 +597,7 @@ body{
 }
 
 .backbtn{
-  margin: 50px 30px;
+  margin: 20px 30px;
   font-size: 50px;
 }
 
@@ -753,7 +754,7 @@ body{
 /*responsive design section*/
 
 
-@media (max-width: 450px) {
+@media (max-width: 454px) {
   
 .nav-container{
   padding:  4px 4px;
@@ -793,7 +794,7 @@ body{
   left: -60%;
   z-index: 3;
   background: #fff;
-  height: 580vh;
+  height: 475vh;
   width: 50%;
   transition: all 0.5s;
 }
@@ -1068,9 +1069,9 @@ body{
 
 #cart-page{
   position: absolute;
-  width: 150%;
-  height: 580vh;
-  top: 30px;
+  width: 100%;
+  height: 470vh;
+  top: 0;
 }
 
 .backbtn{
@@ -1084,8 +1085,45 @@ body{
 }
 
 .cart-container .head{
-  font-size: 39px;
-  padding: 30px 20px;
+  font-size: 19px;
+  padding: 10px 20px;
+}
+
+.cart-container .removebtn{
+  font-size: 23px;
+  margin: 0px 20px;
+  padding: 10px 10px;
+}
+
+.product img{
+  width: 70px;
+  border-radius: 4px;
+  padding: 3px 3px;
+  margin: 0px 5px;
+}
+
+.product #price #category{
+  color: #777777;
+  font-size: 5px;
+}
+
+.product .product-details{
+  margin: 0px 7px;
+}
+
+.product .product-details .quantity{
+  width: 80px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+.quantity button{
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  height: 100%;
+  width: 30px;
+  padding: 3px 1px;
 }
 
 .product{
@@ -1095,6 +1133,10 @@ body{
 
 .product .product-details h1{
   font-size: 20px;
+}
+
+.product .product-details h2{
+  font-size: 15px;
 }
 
 /*vegetables section start here*/

@@ -26,7 +26,7 @@ let AddTocart = (ProductBox) => {
   let cartBox = document.createElement('div');
   cartBox.classList.add('product');
   cartBox.innerHTML = `
-              <img src="₹{ProductImage}">
+              <img src="${ProductImage}">
             <div class="product-details">
               <span id="category">vegetables</span>
               <h1 id="name">${ProductName}</h1>

@@ -1,16 +1,34 @@
 //for login & sign up
 
-const Loginbtn = document.querySelector('#btn');
+const LoginPageBtn = document.querySelector('#btn');
 const LoginPage = document.querySelector('#login-page');
 const CloseBtn = document.querySelector('#closebtn');
 
-Loginbtn.addEventListener('click', (event) => {
+LoginPageBtn.addEventListener('click', (event) => {
   LoginPage.classList.remove('activate');
 })
 
 CloseBtn.addEventListener('click', (event) => {
   LoginPage.classList.add('activate');
 })
+
+let Profile = () => {
+  const LoginBtn = document.querySelector('.login-btn');
+  const profileBtn = document.querySelector('.profile button')
+  const UserName = document.querySelector('#username');
+  const PassWord = document.querySelector('#password'); 
+  
+  if (UserName.value.length === 0 && PassWord.value.length === 0) {
+    alert('Enter username and password!')
+  } else if (UserName.value.length === 0) {
+    alert('Enter a username')
+  } else if (PassWord.value.length === 0) {
+    alert('Enter a password')
+  }
+
+} 
+
+document.querySelector('.login-btn').addEventListener('click', (e) => {Profile();})
 
 //To access the cart of yours
 
@@ -39,6 +57,8 @@ MenuBtn.addEventListener('click', (event) => {
 Close.addEventListener('click', (event) => {
   Slide.style.left = '-60%';
 })
+
+
     
     
     

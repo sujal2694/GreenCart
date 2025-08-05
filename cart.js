@@ -26,7 +26,7 @@ let AddTocart = (ProductBox) => {
   let cartBox = document.createElement('div');
   cartBox.classList.add('product');
   cartBox.innerHTML = `
-              <img src="${ProductImage}">
+              <img src="₹{ProductImage}">
             <div class="product-details">
               <span id="category">vegetables</span>
               <h1 id="name">${ProductName}</h1>
@@ -75,11 +75,11 @@ let updatePrice = () => {
   Boxes.forEach(Box => {
     let priceElement  = Box.querySelector('#price');
     let quantityElement = Box.querySelector('#number');
-    let price = priceElement.textContent.replace('$', '');
+    let price = priceElement.textContent.replace('₹', '');
     let quantity = quantityElement.textContent;
     total += price * quantity;
   })
-  totalprice.textContent = `$${total}`;
+  totalprice.textContent = `₹${total}`;
 }
 
 

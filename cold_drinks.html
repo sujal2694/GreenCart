@@ -171,53 +171,26 @@
       </div>
     </section>
     
-    <section id="cart-page" class="cartOpen">
+    <section id="cart-page">
       <div class="cart-container">
         <div class="backbtn">
           <i class="fa fa-arrow-left"></i>
-        </div>
-        <div class="head">
-          <h1>Your Cart</h1>
+          <h2>Your Cart</h2>
         </div>
         <div class="cart-content">
-<!--          <div class="product">
-            <img src="images/potato_image_1.png">
-            <div class="product-details">
-              <span id="category">vegetables</span>
-              <h1 id="name">Potato 500g</h1>
-              <h2 id="price">$35 <span>$40</span></h2>
-              <div class="quantity">
-                <button class="Btn" id="minus"><i class="fa fa-minus"></i></button>
-                <span id="number">1</span>
-                <button class="Btn" id="plus"><i class="fa fa-plus"></i></button>
-              </div>
-            </div>
-            <i class="fa fa-trash removebtn"></i>
-          </div>-->
+          <!-- Cart items will be dynamically inserted here -->
         </div>
-        <div class="totalprice">
-          <p>Total: <span id="totalPrice">00</span></p>
-        </div>
-        <div class="buybtn">
-          <button>Buy Now</button>
+        <div class="cart-footer">
+          <div class="totalprice">
+            <p>Total: <span id="total-price">₹0</span></p>
+          </div>
+          <div class="buybtn">
+            <button class="Buybtn">Buy Now</button>
+          </div>
         </div>
       </div>
     </section>
   
   <script src="cart.js" type="text/javascript" charset="utf-8"></script>
-  <script>
-const Cart = document.querySelector('#cart-page');
-const CartIcon = document.querySelector('.cart');
-const BackBtn = document.querySelector('.backbtn');
-
-CartIcon.addEventListener('click', (event) => {
-  Cart.classList.remove('cartOpen');
-})
-
-BackBtn.addEventListener('click', (event) => {
-  Cart.classList.add('cartOpen');
-})
-
-  </script>
 </body>
 </html>

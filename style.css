@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
   margin: 0;
@@ -206,7 +207,7 @@ body{
 
 
 .categories-box{
-  width: 18%;
+  width: 10%;
   height: 180px;
   background: #EEF10F8A;
   display: flex;
@@ -249,7 +250,7 @@ body{
 }
 
 .products-opt .product-box{
-  width: 30%;
+  width: 18%;
   padding: 10px 25px;
   margin: 20px 10px;
   border: 1px solid #625E5E63;
@@ -419,7 +420,7 @@ body{
 }
 
 .detail-1{
-  width: 600px;
+  width: 400px;
   margin: 90px 30px;
 }
 
@@ -441,7 +442,7 @@ body{
 
 .detail{
   width: 250px;
-  margin: 90px 20px;
+  margin: 90px 5px;
 }
 
 .detail h1{
@@ -462,6 +463,10 @@ body{
   color: #4B4B4B;
 }
 
+.all-list{
+  display: flex;
+}
+
 /*footer section*/
 
 .foot{
@@ -476,91 +481,95 @@ body{
 }
 
 /*Login page start here*/
-
-#login-page{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #333333BF;
-  backdrop-filter: blur(5px);
+.container{
+  height: 100vh;
   display: grid;
   place-items: center;
+  padding: 20px;
+  background-color: #13df3f44;
 }
 
-#closebtn{
-  background: #fff;
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  top: 150px;
-  right: 100px;
-  font-size: 50px;
-  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.3);
-  display: grid;
-  place-items: center;
+.container .content{
+  width: 30%;
+  padding: 30px;
+  border: 1px solid #262625;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(116, 115, 115, 0.6);
+  text-align: left;
+  background-color: #00D911;
+  backdrop-filter: blur(30px);
 }
 
-.activate{
-  visibility: hidden;
+.content h1{
+  text-align: left;
+  padding: 5px;
 }
 
-.login-container{
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
-}
-
-.login-container h1{
-  font-size: 45px;
-  font-weight: 500;
-  text-align: center;
-  color: #3E3E3E;
-  margin: 30px 50px;
-}
-
-.login-container h1 span{
-  color: #14A225;
-}
-
-.login-container .input-box{
-  margin: 10px 30px;
-}
-
-.login-container .input-box p{
-  padding: 10px 0px;
-  color: #373737;
-}
-
-.login-container .input-box input{
-  height: 40px;
+.content .input-box{
   width: 100%;
-  border: 0.2px solid #5E5E5E;
-  border-radius: 5px;
-  padding: 0px 10px;
+  color: white;
+  margin: 10px 0px;
 }
 
-.login-container p{
-  padding: 15px 30px;
-}
-
-.login-container p a{
-  text-decoration: none;
-  color: #0D942A;
-  font-weight: 400;
-}
-
-.login-container button{
-  width: 80%;
-  height: 40px;
+.input-box input{
+  width: 60%;
+  padding-left: 20px;
+  outline: none;
   border: none;
   border-radius: 10px;
-  background: #17A436EB;
-  color: #fff;
-  font-size: 14px;
-  margin: 20px 30px;
+  height: 30px;
+  background-color: #8382825f;
+  backdrop-filter: blur(20px);
 }
+
+.input-box p{
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-family: "Winky Rough", sans-serif;
+}
+
+.check-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 4px;
+}
+
+.check-btn p{
+  margin-left: 3px;
+  font-size: 12px;
+  font-family: "Winky Rough", sans-serif;
+  color: whitesmoke;
+  letter-spacing: .5px;
+}
+
+.check-btn input{
+  border: none;
+  border-radius: 50px;
+}
+
+.submit-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submit-btn button{
+  width: 300px;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #444242;
+  color: whitesmoke;
+  font-family: "Winky Rough", sans-serif;
+  letter-spacing: .5px;
+}
+
+
+
 
 /*sign up page*/
 
@@ -588,23 +597,23 @@ body{
   left: -750px;
   background-color: #fff;
   height: 190%;
-  width: 700px;
+  width: 500px;
   transition: all 0.5s;
 }
 
 .backbtn{
-  margin: 20px 30px;
-  font-size: 50px;
+  margin: 20px 10px;
+  font-size: 30px;
 }
 
 
 .cart-container{
-  padding: 10px 80px;
+  padding: 10px 50px;
 }
 
 .cart-container .head{
   text-align: center;
-  font-size: 38px;
+  font-size: 28px;
   padding: 30px 20px;
 }
 
@@ -683,7 +692,7 @@ body{
 }
 
 .buybtn button{
-  font-size: 22px;
+  font-size: 18px;
   background-color: #FFA400B0;
   border: none;
   border-radius: 10px;
@@ -747,16 +756,6 @@ body{
   display: none;
 }
 
-/*profile section*/
-
-.helloworld{
-  background: #333;
-  height: 40px;
-  width: 415px;
-  position: absolute;
-  top: 10%;
-}
-
 
 /*responsive design section*/
 
@@ -800,7 +799,7 @@ body{
   position: absolute;
   top: 0;
   left: -60%;
-  z-index: 3;
+  z-index: 5;
   background: #fff;
   height: 475vh;
   width: 50%;
@@ -889,7 +888,7 @@ body{
 /*hero image*/
 
 .img-container{
-  height: 150px;
+  height: 200px;
   width: 95%;
   margin: 90px 10px;
   position: relative;
@@ -904,7 +903,7 @@ body{
 
 .img-container .text{
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 8%;
   font-size: 14px;
 }
@@ -951,7 +950,7 @@ body{
 }
 
 .categories-box{
-  width: 40%;
+  width: 25%;
   padding: 10px 10px;
   margin: 8px 5px;
 }
@@ -983,7 +982,7 @@ body{
 }
 
 .product-box img{
-  width: 250px;
+  width: 300px;
 }
 
 /*About us banner*/
@@ -1102,41 +1101,26 @@ body{
 
 /*Login page start here*/
 
-#login-page{
-  position: fixed;
-  height: 100%;
-  width: 100%;
-}
-
-#closebtn{
-  background: #fff;
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  top: 80px;
-  right: 50px;
-  font-size: 30px;
-  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.3);
-  display: grid;
-  place-items: center;
+.container .content{
+  width: 60%;
 }
 
 /*cart section*/
 
 #cart-page{
-  width: 80%;
+  width: 40%;
   height: 470vh;
   top: 30px;
 }
 
 .backbtn{
-  margin: 30px 10px;
+  margin: 30px 4px;
   font-size: 30px;
 }
 
 
 .cart-container{
-  padding: 5px 40px;
+  padding: 5px 10px;
 }
 
 .cart-container .head{

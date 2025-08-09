@@ -82,7 +82,6 @@ let updatePrice = () => {
   totalprice.textContent = `₹${total}`;
 }
 
-
 let Buybtn = document.querySelector('.Buybtn');
 Buybtn.addEventListener('click', (e) => {
   let CartContent = document.querySelector('.cart-content'); 

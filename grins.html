@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-  <title>Fruits</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Grains</title>
 </head>
 <body>
-  
+
     <section id="navbar">
       <header class="navabr">
         <div class="nav-container">
           <div class="logo">
-            <h1><span>G</span>reenCart</h1>
+            <h1><div id="menu-icon"><i class="fa fa-bars"></i></div><span>G</span>reenCart</h1>
           </div>
           
           <div class="nav-feature">
@@ -24,30 +24,30 @@
                 <a href="#App-details"><li>Contact</li></a>
               </ul>
             </div>
-            
             <div class="searchbar">
-              <input type="search" placeholder="Search products" value="" />
-              <i class="fa fa-magnifying-glass" id="search"></i>
+                <input type="search" placeholder="Search products" value="" />
+                <i class="fa fa-magnifying-glass" id="search"></i>
             </div>
             
             <div class="cart">
-              <i class="fa fa-shopping-cart"></i>
-            </div>         
-            
+                <i class="fa fa-shopping-cart"></i>
+            </div> 
           </div>
+
         </div>
       </header>
     </section>
-  
-    <section id="fruits">
+
+
+    <section id="maggi">
       <div class="head">
-        <h1>Fresh & juicy Fruits</h1>
+        <h1>Fresh & Organic Grains</h1>
       </div>
-      <div class="veggies-list">
+      <div class="Grains">
         
         <div class="product-box">
           <img src="apple_image.png">
-          <span>Fruits</span>
+          <span>Grains</span>
           <h2>Apple 500g</h2>
           <div class="rating">
             <ul>
@@ -67,7 +67,7 @@
         
         <div class="product-box">
           <img src="banana_image_1.png">
-          <span>Fruits</span>
+          <span>Grains</span>
           <h2>Banana 12piece</h2>
           <div class="rating">
             <ul>
@@ -87,7 +87,7 @@
         
         <div class="product-box">
           <img src="grapes_image_1.png">
-          <span>Fruits</span>
+          <span>Grains</span>
           <h2>Grapes 500g</h2>
           <div class="rating">
             <ul>
@@ -107,7 +107,7 @@
         
         <div class="product-box">
           <img src="mango_image_1.png">
-          <span>Fruits</span>
+          <span>Grains</span>
           <h2>Mango 500g</h2>
           <div class="rating">
             <ul>
@@ -127,7 +127,7 @@
         
         <div class="product-box">
           <img src="orange_image.png">
-          <span>Fruits</span>
+          <span>Grains</span>
           <h2>Orange 500g</h2>
           <div class="rating">
             <ul>
@@ -144,12 +144,7 @@
             <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
           </div>
         </div>
-        
-        
-        
-        
-        
-        
+
       </div>
     </section>
     
@@ -185,21 +180,9 @@
         </div>
       </div>
     </section>
-  
-  <script src="cart.js" type="text/javascript" charset="utf-8"></script>
-  <script>
-const Cart = document.querySelector('#cart-page');
-const CartIcon = document.querySelector('.cart');
-const BackBtn = document.querySelector('.backbtn');
 
-CartIcon.addEventListener('click', (event) => {
-  Cart.classList.remove('cartOpen');
-})
 
-BackBtn.addEventListener('click', (event) => {
-  Cart.classList.add('cartOpen');
-})
-
-  </script>
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

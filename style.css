@@ -622,16 +622,24 @@ body{
   justify-content: space-around;
   align-items: center;
   outline: 2px solid #606060BF;
-  padding: 20px 50px;
+  padding: 20px 10px;
   margin: 20px 0px;
 }
 
 .product img{
-  width: 200px;
+  width: 100px;
   border-radius: 10px;
   padding: 5px 5px;
   background: #ACACAC70;
   margin: 0px 10px;
+}
+
+.product .product-details h1{
+  font-size: 18px;
+}
+
+.product .product-details h2{
+  font-size: 20px;
 }
 
 .product #price span{
@@ -656,7 +664,7 @@ body{
 .quantity button{
   background: transparent;
   border: none;
-  font-size: 22px;
+  font-size: 17px;
   height: 100%;
   width: 30px;
   padding: 5px 2px;
@@ -721,10 +729,10 @@ body{
 }
 
 .veggies-list .product-box{
-  width: 45%;
+  width: 18%;
   border: 1px solid #7B7B7BB3;
   padding: 20px 25px;
-  margin: 20px 20px;
+  margin: 10px 10px;
 }
 
 .veggies-list .product-box img{

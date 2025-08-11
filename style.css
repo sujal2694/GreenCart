@@ -760,6 +760,38 @@ body{
   margin: 60px 0px;
 }
 
+#maggi{
+  margin-top: 120px;
+}
+
+#maggi .head{
+  text-align: center;
+  font-size: 50px;
+  margin: 60px 0px;
+}
+
+.maggi .snacks-list .product-box{
+  width: 18%;
+  border: 1px solid #7B7B7BB3;
+  padding: 20px 25px;
+  margin: 10px 10px;
+}
+
+.maggi .snacks-list .product-box img{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
 #slide-menu{
   display: none;
 }

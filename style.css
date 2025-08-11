@@ -770,6 +770,14 @@ body{
   margin: 60px 0px;
 }
 
+.snacks-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
 .maggi .snacks-list .product-box{
   width: 18%;
   border: 1px solid #7B7B7BB3;

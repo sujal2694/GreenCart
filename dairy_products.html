@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Dairy Products</title>
+</head>
+<body>
+
+    <section id="navbar">
+      <header class="navabr">
+        <div class="nav-container">
+          <div class="logo">
+            <h1><div id="menu-icon"><i class="fa fa-bars"></i></div><span>G</span>reenCart</h1>
+          </div>
+          
+          <div class="nav-feature">
+            <div class="nav-options">
+              <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#sellers"><li>All Product</li></a>
+                <a href="#App-details"><li>Contact</li></a>
+              </ul>
+            </div>
+            <div class="searchbar">
+                <input type="search" placeholder="Search products" value="" />
+                <i class="fa fa-magnifying-glass" id="search"></i>
+            </div>
+            
+            <div class="cart">
+                <i class="fa fa-shopping-cart"></i>
+            </div> 
+          </div>
+
+        </div>
+      </header>
+    </section>
+
+
+    <section id="dairy_product">
+      <div class="head">
+        <h1>Fresh Products</h1>
+      </div>
+      <div class="dairy-product-list">
+        
+        <div class="product-box">
+          <img src="amul_milk_image.png">
+          <span>Dairy Products</span>
+          <h2>Amul Milk 1L</h2>
+          <div class="rating">
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <span>(4)</span>
+          </div>
+          <div class="price-cart">
+            <h3>₹60</h3>
+            <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
+          </div>
+        </div>
+        
+        <div class="product-box">
+          <img src="butter_croissant_image.png">
+          <span>Dairy Products</span>
+          <h2>Butter Croissant</h2>
+          <div class="rating">
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <span>(4)</span>
+          </div>
+          <div class="price-cart">
+            <h3>₹120</h3>
+            <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
+          </div>
+        </div>
+        
+        <div class="product-box">
+          <img src="cheese_image.png">
+          <span>Dairy Products</span>
+          <h2>Cheese</h2>
+          <div class="rating">
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <span>(4)</span>
+          </div>
+          <div class="price-cart">
+            <h3>₹30</h3>
+            <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
+          </div>
+        </div>
+        
+        <div class="product-box">
+          <img src="paneer_image.png">
+          <span>Dairy Products</span>
+          <h2>paneer</h2>
+          <div class="rating">
+            <ul>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star checked"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <span>(4)</span>
+          </div>
+          <div class="price-cart">
+            <h3>₹80</h3>
+            <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+  <section id="cart-page" class="cart-open">
+      <div class="cart-container">
+        <div class="backbtn">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+        <div class="head">
+          <h1>Your Cart</h1>
+        </div>
+        <div class="cart-content">
+<!--      <div class="product">
+            <img src="potato_image_1.png">
+            <div class="product-details">
+              <span id="category">vegetables</span>
+              <h1 id="name">Potato 500g</h1>
+              <h2 id="price">₹35</h2>
+              <div class="quantity">
+                <button class="Btn" id="minus"><i class="fa fa-minus"></i></button>
+                <span id="number">1</span>
+                <button class="Btn" id="plus"><i class="fa fa-plus"></i></button>
+              </div>
+            </div>
+            <i class="fa fa-trash removebtn"></i>
+          </div>-->
+        </div>
+        <div class="totalprice">
+          <p>Total: <span id="total-price">00</span></p>
+        </div>
+        <div class="buybtn">
+          <button class="Buybtn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

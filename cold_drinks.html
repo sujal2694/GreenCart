@@ -60,7 +60,7 @@
             <span>(4)</span>
           </div>
           <div class="price-cart">
-            <h3>₹20 <span>₹40</span></h3>
+            <h3>₹20</h3>
             <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
           </div>
         </div>
@@ -80,13 +80,13 @@
             <span>(4)</span>
           </div>
           <div class="price-cart">
-            <h3>₹30 <span>₹20</span></h3>
+            <h3>₹30</h3>
             <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
           </div>
         </div>
         
         <div class="product-box">
-          <img src="pepsi_image_2.png">
+          <img src="pepsi_image.png">
           <span>Cold Drinks</span>
           <h2>Pepsi 500ml</h2>
           <div class="rating">
@@ -100,27 +100,7 @@
             <span>(4)</span>
           </div>
           <div class="price-cart">
-            <h3>₹30 <span>₹50</span></h3>
-            <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
-          </div>
-        </div>
-        
-        <div class="product-box">
-          <img src="pepsi_image.png">
-          <span>Cold Drinks</span>
-          <h2>Pepsi 1000ml</h2>
-          <div class="rating">
-            <ul>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star checked"></i></li>
-              <li><i class="fa fa-star"></i></li>
-            </ul>
-            <span>(4)</span>
-          </div>
-          <div class="price-cart">
-            <h3>₹50 <span>₹40</span></h3>
+            <h3>₹30</h3>
             <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
           </div>
         </div>
@@ -140,7 +120,7 @@
             <span>(4)</span>
           </div>
           <div class="price-cart">
-            <h3>₹30 <span>₹40</span></h3>
+            <h3>₹30</h3>
             <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
           </div>
         </div>
@@ -160,7 +140,7 @@
             <span>(4)</span>
           </div>
           <div class="price-cart">
-            <h3>₹40 <span>₹45</span></h3>
+            <h3>₹40</h3>
             <button class="BTN"><i class="fa fa-shopping-cart"></i> Add</button>
           </div>
         </div>
@@ -171,7 +151,7 @@
       </div>
     </section>
     
-    <section id="cart-page" class="cartOpen">
+    <section id="cart-page" class="cart-open">
       <div class="cart-container">
         <div class="backbtn">
           <i class="fa fa-arrow-left"></i>
@@ -180,12 +160,12 @@
           <h1>Your Cart</h1>
         </div>
         <div class="cart-content">
-<!--          <div class="product">
-            <img src="images/potato_image_1.png">
+<!--      <div class="product">
+            <img src="potato_image_1.png">
             <div class="product-details">
               <span id="category">vegetables</span>
               <h1 id="name">Potato 500g</h1>
-              <h2 id="price">₹35 <span>₹40</span></h2>
+              <h2 id="price">₹35</h2>
               <div class="quantity">
                 <button class="Btn" id="minus"><i class="fa fa-minus"></i></button>
                 <span id="number">1</span>
@@ -196,28 +176,15 @@
           </div>-->
         </div>
         <div class="totalprice">
-          <p>Total: <span id="totalPrice">00</span></p>
+          <p>Total: <span id="total-price">00</span></p>
         </div>
         <div class="buybtn">
-          <button>Buy Now</button>
+          <button class="Buybtn">Buy Now</button>
         </div>
       </div>
     </section>
   
   <script src="cart.js" type="text/javascript" charset="utf-8"></script>
-  <script>
-const Cart = document.querySelector('#cart-page');
-const CartIcon = document.querySelector('.cart');
-const BackBtn = document.querySelector('.backbtn');
-
-CartIcon.addEventListener('click', (event) => {
-  Cart.classList.remove('cartOpen');
-})
-
-BackBtn.addEventListener('click', (event) => {
-  Cart.classList.add('cartOpen');
-})
-
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -597,7 +597,7 @@ body{
   left: -750px;
   background-color: #fff;
   height: 190%;
-  width: 500px;
+  width: 400px;
   transition: all 0.5s;
 }
 
@@ -608,13 +608,13 @@ body{
 
 
 .cart-container{
-  padding: 10px 50px;
+  padding: 10px 20px;
 }
 
 .cart-container .head{
   text-align: center;
-  font-size: 28px;
-  padding: 30px 20px;
+  font-size: 22px;
+  padding: 10px 20px;
 }
 
 .product{
@@ -622,52 +622,52 @@ body{
   justify-content: space-around;
   align-items: center;
   outline: 2px solid #606060BF;
-  padding: 20px 10px;
-  margin: 20px 0px;
+  padding: 10px 10px;
+  margin: 5px 0px;
 }
 
 .product img{
-  width: 100px;
-  border-radius: 10px;
+  width: 80px;
+  border-radius: 5px;
   padding: 5px 5px;
   background: #ACACAC70;
   margin: 0px 10px;
 }
 
 .product .product-details h1{
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .product .product-details h2{
-  font-size: 20px;
-}
-
-.product #price span{
-  color: #777777;
   font-size: 15px;
 }
 
+.product #price #category{
+  color: #777777;
+  font-size: 5px;
+}
+
 .product .product-details{
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .product .product-details .quantity{
-  width: 100px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 1px solid #373737BF;
-  border-radius: 10px;
-  margin: 30px 0px;
+  border-radius: 5px;
+  margin: 10px 0px;
 }
 
 .quantity button{
   background: transparent;
   border: none;
-  font-size: 17px;
+  font-size: 10px;
   height: 100%;
   width: 30px;
-  padding: 5px 2px;
+  padding: 5px 1px;
 }
 
 .quantity button:nth-child(1){
@@ -678,8 +678,12 @@ body{
   border-left: 1px solid #373737BF;
 }
 
+.quantity #number{
+  padding: 0px 4px;
+}
+
 .cart-container .removebtn{
-  font-size: 30px;
+  font-size: 20px;
   margin: 0px 40px;
   padding: 20px 20px;
 }
@@ -899,7 +903,7 @@ body{
 
 /*responsive design section*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   
 .nav-container{
   padding:  2px 2px;
@@ -1248,7 +1252,7 @@ body{
 /*cart section*/
 
 #cart-page{
-  width: 40%;
+  width: 60%;
   height: 470vh;
   top: 30px;
 }
@@ -1269,9 +1273,9 @@ body{
 }
 
 .cart-container .removebtn{
-  font-size: 23px;
+  font-size: 22px;
   margin: 0px 20px;
-  padding: 10px 10px;
+  padding: 5px 5px;
 }
 
 .product img{
@@ -1305,17 +1309,21 @@ body{
   padding: 3px 1px;
 }
 
+.quantity #number{
+  padding: 0px 4px;
+}
+
 .product{
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 10px 0px;
 }
 
 .product .product-details h1{
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .product .product-details h2{
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /*vegetables section start here*/
@@ -1361,6 +1369,182 @@ body{
   font-size: 30px;
   margin: 40px 0px;
 }
+
+/*vegetables section start here*/
+
+
+#vegetables{
+  margin-top: 80px;
+  text-align: center;
+}
+
+#vegetables .head{
+  font-size: 20px;
+  margin: 30px 0px;
+}
+
+.veggies-list .product-box{
+  width: 80%;
+  border: 1px solid #7B7B7BB3;
+  padding: 20px 25px;
+  margin: 10px 50px;
+} 
+
+.veggies-list .product-box img{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/*fruits section start here*/
+
+#fruits{
+  margin-top: 80px;
+}
+
+#fruits .head{
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0px;
+}
+
+/*cold_drinks section start here*/
+
+#cold_drinks{
+  margin-top: 120px;
+}
+
+#cold_drinks .head{
+  text-align: center;
+  font-size: 50px;
+  margin: 60px 0px;
+}
+
+/*instant_food section start here*/
+
+#maggi{
+  margin-top: 120px;
+}
+
+#maggi .head{
+  text-align: center;
+  font-size: 50px;
+  margin: 60px 0px;
+}
+
+.snacks-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+#maggi .snacks-list .product-box{
+  width: 18%;
+  border: 1px solid #7B7B7BB3;
+  padding: 20px 25px;
+  margin: 10px 10px;
+}
+
+#maggi .snacks-list .product-box img{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/*grains section start here*/
+
+#grains{
+  margin-top: 120px;
+}
+
+#grains .head{
+  text-align: center;
+  font-size: 50px;
+  margin: 60px 0px;
+}
+
+.Grains-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+#grains .Grains-list .product-box{
+  width: 18%;
+  border: 1px solid #7B7B7BB3;
+  padding: 20px 25px;
+  margin: 10px 10px;
+}
+
+#grains .Grains-list .product-box img{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/*bakery section start here*/
+
+#bakery{
+  margin-top: 120px;
+}
+
+#bakery .head{
+  text-align: center;
+  font-size: 50px;
+  margin: 60px 0px;
+}
+
+.bakery-product-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#bakery .bakery-product-list .product-box{
+  width: 18%;
+  border: 1px solid #7B7B7BB3;
+  padding: 20px 25px;
+  margin: 10px 10px;
+}
+
+#bakery .bakery-product-list .product-box img{
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/*Dairy products start here*/
+
+#dairy_product{
+  margin-top: 120px;
+}
+
+#dairy_product .head{
+  text-align: center;
+  font-size: 50px;
+  margin: 60px 0px;
+}
+
+.dairy-product-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#dairy_product .dairy-product-list .product-box{
+  width: 18%;
+  border: 1px solid #7B7B7BB3;
+  padding: 20px 25px;
+  margin: 10px 10px;
+}
+
+#dairy_product .Grains-list .product-box img{
+  width: 100%;
+  margin: 10px 0px;
+}
+
 
 }
 

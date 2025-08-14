@@ -903,7 +903,7 @@ body{
 
 /*responsive design section*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 555px) {
   
 .nav-container{
   padding:  2px 2px;
@@ -967,7 +967,12 @@ body{
   padding: 20px 10px;
 }
 
-.options ul li{
+.options ul a{
+  text-decoration: none;
+  color: #222222;
+}
+
+.options ul a li{
   list-style: none;
   line-height: 40px;
   padding-left: 10px;
@@ -1330,50 +1335,6 @@ body{
 
 
 #vegetables{
-  width: 150%;
-  margin-top: 70px;
-}
-
-#vegetables .head{
-  font-size: 30px;
-  margin: 40px 0px;
-}
-
-.veggies-list .product-box{
-  width: 48%;
-  padding: 10px 8px;
-  margin: 5px 0px;
-}
-
-.veggies-list .product-box img{
-  width: 100%;
-  margin: 5px 0px;
-}
-
-#fruits{
-  width: 150%;
-  margin-top: 70px;
-}
-
-#fruits .head{
-  font-size: 30px;
-  margin: 40px 0px;
-}
-
-#cold_drinks{
-  width: 150%;
-  margin-top: 70px;
-}
-
-#cold_drinks .head{
-  font-size: 30px;
-  margin: 40px 0px;
-}
-
-/*vegetables section start here*/
-
-
-#vegetables{
   margin-top: 80px;
   text-align: center;
 }
@@ -1427,8 +1388,8 @@ body{
 
 #maggi .head{
   text-align: center;
-  font-size: 50px;
-  margin: 60px 0px;
+  font-size: 30px;
+  margin: 30px 0px;
 }
 
 .snacks-list{
@@ -1438,9 +1399,8 @@ body{
   flex-wrap: wrap;
 }
 
-
 #maggi .snacks-list .product-box{
-  width: 18%;
+  width: 80%;
   border: 1px solid #7B7B7BB3;
   padding: 20px 25px;
   margin: 10px 10px;
@@ -1459,8 +1419,8 @@ body{
 
 #grains .head{
   text-align: center;
-  font-size: 50px;
-  margin: 60px 0px;
+  font-size: 30px;
+  margin: 30px 0px;
 }
 
 .Grains-list{
@@ -1470,9 +1430,8 @@ body{
   flex-wrap: wrap;
 }
 
-
 #grains .Grains-list .product-box{
-  width: 18%;
+  width: 80%;
   border: 1px solid #7B7B7BB3;
   padding: 20px 25px;
   margin: 10px 10px;
@@ -1491,8 +1450,8 @@ body{
 
 #bakery .head{
   text-align: center;
-  font-size: 50px;
-  margin: 60px 0px;
+  font-size: 30px;
+  margin: 30px 0px;
 }
 
 .bakery-product-list{
@@ -1503,7 +1462,7 @@ body{
 }
 
 #bakery .bakery-product-list .product-box{
-  width: 18%;
+  width: 80%;
   border: 1px solid #7B7B7BB3;
   padding: 20px 25px;
   margin: 10px 10px;
@@ -1522,8 +1481,8 @@ body{
 
 #dairy_product .head{
   text-align: center;
-  font-size: 50px;
-  margin: 60px 0px;
+  font-size: 30px;
+  margin: 30px 0px;
 }
 
 .dairy-product-list{
@@ -1534,13 +1493,13 @@ body{
 }
 
 #dairy_product .dairy-product-list .product-box{
-  width: 18%;
+  width: 80%;
   border: 1px solid #7B7B7BB3;
   padding: 20px 25px;
   margin: 10px 10px;
 }
 
-#dairy_product .Grains-list .product-box img{
+#dairy_product .dairy-product-list .product-box img{
   width: 100%;
   margin: 10px 0px;
 }

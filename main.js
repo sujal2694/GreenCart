@@ -6,6 +6,7 @@ const BackBtn = document.querySelector('.backbtn');
 
 CartIcon.addEventListener('click', (event) => {
   Cart.style.left = '0';
+  console.log("hello");
 })
 
 BackBtn.addEventListener('click', (event) => {

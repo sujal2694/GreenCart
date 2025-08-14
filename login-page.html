@@ -12,14 +12,14 @@
     <section id="navbar">
       <header class="navabr">
         <div class="nav-container">
-          <div class="logo">
+           <div class="logo">
             <h1><div id="menu-icon"><i class="fa fa-bars"></i></div><span>G</span>reenCart</h1>
           </div>
           
           <div class="nav-feature">
             <div class="nav-options">
               <ul>
-                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Home</li></a>
                 <a href="#sellers"><li>All Product</li></a>
                 <a href="#App-details"><li>Contact</li></a>
               </ul>
@@ -29,10 +29,23 @@
         </div>
       </header>
     </section>
+
+     <section id="slide-menu">
+     <div class="slide">
+       <div class="close-btn">
+         <i class="fa fa-close"></i>
+       </div>
+       <div class="options">
+         <ul>
+           <a href="index.html"><li>Home</li></a>
+           <a href="index.html/#sellers"><li>All Products</li></a>
+           <a href="index.html/#App-details"><li>Contact</li></a>
+         </ul>
+       </div>
+     </div>
+    </section>
   
-  
-  
-    <form action="connect.php" method="post" >
+    <form action="" method="" >
         <div class="container">
             <div class="content">
                 <div class="head">
@@ -57,17 +70,19 @@
         </div>
     </form>
 
-
-
-
-
-
-
-
-
-
-
-
+<script>
+  let Slide = document.querySelector('#slide-menu');
+  let MenuBtn = document.querySelector('.fa-bars');
+  let Close = document.querySelector('.close-btn');
+  
+  MenuBtn.addEventListener('click', (event) => {
+    Slide.style.left = '0';
+  })
+  
+  Close.addEventListener('click', (event) => {
+    Slide.style.left = '-60%';
+  })
+</script>
 
 </body>
 </html>
